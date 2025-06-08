@@ -818,32 +818,38 @@ body {
 footer {
     background: var(--bg-primary);
     color: var(--text-primary);
-    padding: 6rem 0 3rem;
+    padding: 4rem 0 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 4rem;
-    margin-bottom: 4rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .footer-logo {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.5rem;
 }
 
 .footer-logo-img {
-    height: 80px;
+    height: 100px;
     width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 15px var(--shadow-color));
 }
 
 .footer-social {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .social-link {
@@ -863,6 +869,7 @@ footer {
 .social-link:hover {
     background: var(--primary-color);
     transform: translateY(-3px);
+    color: var(--light-color);
 }
 
 .footer-copyright {
@@ -1045,49 +1052,40 @@ footer {
         padding: 0.8rem 1.5rem;
     }
 
-    .contact-form,
-    .contact-card {
-        padding: 2rem;
-    }
-
-    .about-content {
+    .contact-content {
         grid-template-columns: 1fr;
-        gap: 3rem;
-        text-align: center;
+        gap: 2rem;
     }
 
-    .about-image {
-        padding: 0;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .about-logo {
-        transform: none;
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-
-    .about-card {
-        padding: 2rem;
-    }
-
-    .about-card h3 {
-        font-size: 1.8rem;
-    }
-
-    .highlight-text {
-        font-size: 1.1rem;
-    }
-
-    .sub-text {
-        font-size: 1rem;
-    }
-
-    .feature {
-        justify-content: center;
+    .contact-card,
+    .contact-form {
         padding: 1.5rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-header {
+        margin-bottom: 2rem;
+    }
+
+    .contact-logo {
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 1rem;
     }
 }
 
@@ -1108,6 +1106,21 @@ footer {
 
     .footer-content {
         gap: 2rem;
+    }
+
+    .footer-logo-img {
+        height: 80px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
+        padding: 1.5rem 1rem 0;
     }
 }
 
