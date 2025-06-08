@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces da Vovó - Confeitaria Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="imagens/logo.jpg" alt="Doces da Vovó Logo" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Início</a>
+            <a href="#about" class="nav-link">Sobre</a>
+            <a href="#products" class="nav-link">Produtos</a>
+            <a href="#contact" class="nav-link">Contato</a>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </nav>
+    <div class="menu-overlay"></div>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="imagens/logo.jpg" alt="Doces da Vovó Logo" class="hero-logo">
+                <h1>Doces da Vovó</h1>
+                <p class="hero-subtitle">Confeitaria artesanal com amor e carinho</p>
+                <a href="#contact" class="cta-button">
+                    <span>Faça seu pedido</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Nossa História</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="imagens/logo.jpg" alt="Doces da Vovó" class="about-logo">
+                </div>
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>Nossa Missão</h3>
+                        <p class="highlight-text">Na Doces da Vovó, nossa missão é transformar momentos especiais em memórias doces e inesquecíveis. Cada doce é preparado com ingredientes selecionados e muito amor, seguindo receitas tradicionais com um toque de inovação.</p>
+                        <p class="sub-text">Com carinho e dedicação, criamos doces que não apenas satisfazem o paladar, mas também aquecem o coração.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Nossa História</h3>
+                        <p class="highlight-text">Nascida do amor pela confeitaria e da vontade de compartilhar momentos doces com todos, a Doces da Vovó começou como um sonho e hoje é uma realidade que encanta paladares e aquece corações.</p>
+                        <p class="sub-text">Cada receita carrega consigo uma história de tradição, dedicação e muito carinho, mantendo viva a essência da confeitaria artesanal.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Amor em cada detalhe</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Qualidade premium</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-gem"></i>
+                            <span>Ingredientes selecionados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="pao-mel">
+                    <div class="product-image">
+                        <img src="imagens/paodemel.jpg" alt="Pão de Mel Artesanal">
+                        <div class="product-overlay">
+                            <div class="product-details">
+                                <h3>Pão de Mel Artesanal</h3>
+                                <p>Delicioso pão de mel caseiro, feito com ingredientes selecionados e muito carinho</p>
+                                <div class="product-features">
+                                    <span>Receita tradicional</span>
+                                    <span>Ingredientes naturais</span>
+                                </div>
+                                <a href="#contact" class="product-cta">Fazer pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="gelinho">
+                    <div class="product-image">
+                        <img src="imagens/gelinho.jpg" alt="Gelinho Artesanal">
+                        <div class="product-overlay">
+                            <div class="product-details">
+                                <h3>Gelinho Artesanal</h3>
+                                <p>Gelinho caseiro, uma sobremesa refrescante e deliciosa para todos os momentos</p>
+                                <div class="product-features">
+                                    <span>Sabores variados</span>
+                                    <span>Refrescante</span>
+                                </div>
+                                <a href="#contact" class="product-cta">Fazer pedido</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <img src="imagens/logo.jpg" alt="Doces da Vovó" class="contact-logo">
+                            <h3>Vamos Conversar</h3>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <h4>Telefone</h4>
+                                <p>(18) 99667-9240</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <div class="contact-text">
+                                <h4>Instagram</h4>
+                                <a href="https://www.instagram.com/silviaricharddocesdavovo/" target="_blank">@silviaricharddocesdavovo</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <h4>Horário de Atendimento</h4>
+                                <p>Segunda a Sábado: 9h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" name="name" required>
+                            <label>Seu nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" required>
+                            <label>Seu telefone</label>
+                        </div>
+                        <div class="form-group">
+                            <select name="payment" required>
+                                <option value="" disabled selected>Forma de pagamento</option>
+                                <option value="Dinheiro">Dinheiro</option>
+                                <option value="PIX">PIX</option>
+                                <option value="Cartão de Crédito">Cartão de Crédito</option>
+                                <option value="Cartão de Débito">Cartão de Débito</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" required placeholder="Descreva o que você deseja pedir..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">
+                            <span>Enviar Pedido</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imagens/Logo_semfundo.png" alt="Doces da Vovó" class="footer-logo-img">
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/silviaricharddocesdavovo/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5518996679240" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-copyright">&copy; 2024 Doces da Vovó. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="theme-toggle" aria-label="Alternar tema">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 
