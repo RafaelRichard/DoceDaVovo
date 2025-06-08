@@ -680,9 +680,9 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Contact Section */
+/* Contact Section Improvements */
 .contact {
-    padding: 8rem 0;
+    padding: 6rem 0;
     background: var(--bg-secondary);
 }
 
@@ -693,29 +693,35 @@ body {
     align-items: start;
 }
 
+.contact-info {
+    width: 100%;
+}
+
+.contact-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    height: 100%;
+}
+
 .contact-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 .contact-logo {
     width: 120px;
     height: auto;
     margin-bottom: 1.5rem;
-}
-
-.contact-card {
-    background: var(--card-bg);
-    border-radius: 20px;
-    padding: 3rem;
-    box-shadow: 0 10px 30px var(--shadow-color);
+    filter: drop-shadow(0 5px 15px var(--shadow-color));
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 1.5rem;
     background: var(--bg-primary);
     border-radius: 15px;
@@ -729,6 +735,7 @@ body {
 .contact-item i {
     font-size: 1.5rem;
     color: var(--primary-color);
+    min-width: 24px;
 }
 
 .contact-text h4 {
@@ -744,6 +751,7 @@ body {
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
+    word-break: break-word;
 }
 
 .contact-text a:hover {
@@ -753,8 +761,9 @@ body {
 .contact-form {
     background: var(--card-bg);
     border-radius: 20px;
-    padding: 3rem;
+    padding: 2.5rem;
     box-shadow: 0 10px 30px var(--shadow-color);
+    height: 100%;
 }
 
 .form-group {
@@ -776,15 +785,25 @@ body {
     transition: all 0.3s ease;
 }
 
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
 .form-group select {
     cursor: pointer;
     appearance: none;
     padding-right: 2rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236C63FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1.2rem;
 }
 
 .form-group select option {
-    background: var(--light-color);
-    color: var(--dark-color);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    padding: 1rem;
 }
 
 .form-group label {
@@ -1052,6 +1071,10 @@ footer {
         padding: 0.8rem 1.5rem;
     }
 
+    .contact {
+        padding: 4rem 0;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1064,11 +1087,6 @@ footer {
         margin: 0;
     }
 
-    .contact-item {
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
-
     .contact-header {
         margin-bottom: 2rem;
     }
@@ -1076,6 +1094,25 @@ footer {
     .contact-logo {
         width: 100px;
         margin-bottom: 1rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .contact-item i {
+        font-size: 1.2rem;
+    }
+
+    .contact-text h4 {
+        font-size: 1.1rem;
+    }
+
+    .contact-text p,
+    .contact-text a {
+        font-size: 1rem;
     }
 
     .form-group {
@@ -1086,6 +1123,20 @@ footer {
     .form-group textarea,
     .form-group select {
         font-size: 1rem;
+        padding: 0.8rem 0;
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -1121,6 +1172,28 @@ footer {
     .footer-copyright {
         font-size: 0.8rem;
         padding: 1.5rem 1rem 0;
+    }
+
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .contact-card,
+    .contact-form {
+        padding: 1.2rem;
+    }
+
+    .contact-item {
+        padding: 0.8rem;
+    }
+
+    .contact-text h4 {
+        font-size: 1rem;
+    }
+
+    .contact-text p,
+    .contact-text a {
+        font-size: 0.9rem;
     }
 }
 
